@@ -2,16 +2,17 @@ import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import atc from './atc.jpg'
 import ecom from './ecom.jpg'
-import sm from './sm.jpg'
+import sm from './sm.webp'
 const HomePage = () => {
   return (
     <div>
+      <br></br><br />
     <Carousel fade>
       <Carousel.Item>
         <img
           src={ecom}
           alt="First slide"
-          width={1100}
+          width={900}
           height={400}
         />
       </Carousel.Item>
@@ -20,7 +21,7 @@ const HomePage = () => {
         
           src={atc}
           alt="Second slide"
-          width={1100}
+          width={900}
           height={400}
         />
       </Carousel.Item>
@@ -29,7 +30,7 @@ const HomePage = () => {
           
           src={sm}
           alt="Third slide"
-          width={1100}
+          width={900}
           height={400}
         />
       </Carousel.Item>
@@ -37,12 +38,38 @@ const HomePage = () => {
 
     
     <br /><br />
-    <div className='center'><h1>Customer Management System :</h1><br />
-  
-      <a href="/customer-login" className='btn btn-warning btn-color btn-bg-color btn-sm col-xs-2 margin-left'>Login </a><br /><br />
 
-      <a href='/register' className='btn btn-warning btn-color btn-bg-color btn-sm col-xs-2 margin-left'>Signup</a><br /><br />
+    <h2 className="category-heading">Shop by Categories</h2>
 
+    <div className="product-container1">
+    <ul className="mystyle-products">
+                <li className="product">
+                    <a href="/category/clothing">
+                        <img alt="clothing" className="attachment-shop_catalog1" src="https://tinyurl.com/488my59y" />
+                        <h2 className="custom-font">Clothing</h2>
+                    </a>
+                    <a href="/category/clothing" className="btn btn-dark btn-circle btn-review" data-toggle="tooltip" data-placement="top" title="Quick View"><i className="ion ion-ios-move"></i></a>
+                </li>
+            </ul>
+            <ul className="mystyle-products">
+            <li className="product">
+                    <a href="/category/footwear">
+                        <img alt="footwear" className="attachment-shop_catalog1" src="https://tinyurl.com/2p9f7wv8" />
+                        <h2 className="custom-font">FootWear</h2>
+                    </a>
+                    <a href="/category/footwear" className="btn btn-dark btn-circle btn-review" data-toggle="tooltip" data-placement="top" title="Quick View"><i className="ion ion-ios-move"></i></a>
+                </li>
+            </ul>
+            <ul className="mystyle-products">
+            <li className="product">
+                    <a href="/category/miscellaneous">
+                        <img alt="miscellaneous" className="attachment-shop_catalog1" src="https://tinyurl.com/3t6mtsak" />
+                        <h2 className="custom-font">Miscellaneous</h2>
+                    </a>
+                    <a href="/category/miscellaneous" className="btn btn-dark btn-circle btn-review" data-toggle="tooltip" data-placement="top" title="Quick View"><i className="ion ion-ios-move"></i></a>
+                </li>
+            </ul>
+            
     </div>
     </div>
   )

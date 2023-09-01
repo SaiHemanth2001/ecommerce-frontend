@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import {FacebookFilled,GoogleOutlined,TwitterOutlined} from '@ant-design/icons';
 
 
 const CustomerLogin = () => {
@@ -15,14 +16,14 @@ const CustomerLogin = () => {
             password:password
         }).then(res=>{
             window.localStorage.setItem("jwt",res.data)
-             navigate(`/customer`)
+             navigate(`/home`)
         }).catch(error=>{
             console.log(error)
             alert('Wrong Username or Password ')
         })
     }
   return (
-    <div className="Auth-form-container">
+    <div className="App">
     <form className="Auth-form">
       <div className="Auth-form-content">
         <h3 className="Auth-form-title">Sign In</h3>
@@ -47,12 +48,18 @@ const CustomerLogin = () => {
           />
         </div>
         <div className="d-grid gap-2 mt-3">
-          <button type="submit" className="btn btn-primary" onClick={(e)=>authenticateEmployee(e)}>
-            Submit
-          </button>
+          <a type="submit" className="btn btn-primary" onClick={(e)=>authenticateEmployee(e)}>
+            Login
+          </a>
           <div className='d-grid slide'>
-         <a href='/' className='btn btn-primary'>Home</a> 
+         <span>Don't have an account? <a href='/register'>SignUp</a> </span>
           </div>
+          <div className='socialLogin'>
+            <GoogleOutlined className="socialIcon" style={{color:"red"}}/>
+            <FacebookFilled className="socialIcon"  style={{color:"blue"}}/>
+            <TwitterOutlined className="socialIcon" style={{color:"cyan"}}/>
+          </div>
+          
         </div>
       </div>
     </form>
