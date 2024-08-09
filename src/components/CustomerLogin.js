@@ -20,8 +20,8 @@ const CustomerLogin = () => {
     const authenticateEmployee=(e)=>{
         e.preventDefault();
         axios.post("http://localhost:8080/customer/authenticate",{
-            email:email,
-            password:password
+            email:email.toLowerCase(),
+            password:password.toLowerCase()
         }).then(res=>{
             window.localStorage.setItem("jwt",res.data)
              navigate(`${email}/home`);

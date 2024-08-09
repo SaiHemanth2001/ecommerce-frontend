@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import atc from './atc.jpg'
 import ecom from './ecom.jpg'
 import sm from './sm.webp'
+import bags from './bags.avif'
 import { useParams } from 'react-router-dom';
 
 const HomePage = () => {
@@ -10,7 +11,7 @@ const HomePage = () => {
   return (
     <div>
       <br></br><br />
-    <Carousel fade>
+    <Carousel fade interval={1000}>
       <Carousel.Item>
         <img
           src={ecom}
@@ -32,6 +33,15 @@ const HomePage = () => {
         <img
           
           src={sm}
+          alt="Third slide"
+          width={900}
+          height={400}
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          
+          src={bags}
           alt="Third slide"
           width={900}
           height={400}
