@@ -1,0 +1,54 @@
+.header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #61dafb;
+}
+
+.header nav {
+    margin: 0;
+    margin-left: auto;
+}
+
+.header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.header nav ul li {
+    margin: 0;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header nav ul li a:hover {
+    background-color: #3c4048;
+    color: #e0e0e0;
+}
+
+.header nav ul li a:active {
+    background-color: #20232a;
+}
+

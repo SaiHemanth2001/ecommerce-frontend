@@ -1,0 +1,260 @@
+.App {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: #FAFAFA;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.product {
+  margin-right: 10px;
+}
+.toggle-password-btn {
+  position: absolute;
+  right: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.Auth-form {
+  width: 420px;
+  background-color: rgba(255, 255, 255, 0.33);
+  box-shadow: 0px 8px 32px 0 rgba(0, 0, 255, 0.33);
+  backdrop-filter: blur(3px);
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  padding: 0px 16px 16px 16px;
+}
+
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+.socialLogin {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  color: white;
+  font-size: 32px;
+}
+
+.left {
+  margin-left: 90%;
+}
+
+.right {
+  margin-right: 60%;
+  border-top-left-radius: 50%;
+}
+
+.socialIcon {
+  cursor: pointer;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.product-container1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-heading {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  font-weight: bold;
+  color: #FF5733;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.button-checkout {
+  background-color: white;
+  text-decoration: none;
+  color: #007BFF;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  text-align: center;
+}
+
+.button-delete {
+  background-color: white;
+  text-decoration: none;
+  color: #160505;
+  ;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  text-align: center;
+}
+
+.password-flex{
+  display: flex;
+}
+
+.button-checkout:hover {
+  background-color: #2ae4e4;
+}
+.button-delete:hover {
+  background-color: #ec1010;
+}
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.button-container {
+  text-align: center;
+  margin-left: 60%;
+  position: fixed;
+  top: 19px;
+  right: 10px;
+}
+.amount{
+  color: #28A745;
+}
+.product-name{
+  color: #333333;
+}
+
+.button-signout {
+  background-color: #FF6F61;
+  text-decoration: none;
+  color: white;
+  padding: 12px 24px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-signout:hover {
+  background-color: #FF4C40;
+}
+
+.button-clearcart {
+  background-color: #FFAB00;
+  text-decoration: none;
+  margin-left: 10px;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-clearcart:hover {
+  background-color: #FF8C00;
+}
+
+.button-back {
+  background-color: #4A90E2;
+  text-decoration: none;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-back:hover {
+  background-color: #357ABD;
+}
+
+
+
+.button-viewcart {
+  background-color: #32C7A1;
+  text-decoration: none;
+  margin-left: 10px;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-viewcart:hover {
+  background-color: #28A79E;
+}
+
+.button-homepage {
+  background-color: #FF8C42;
+  text-decoration: none;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-homepage:hover {
+  background-color: #FF6F3C;
+}
+
+.payment-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.payment-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
